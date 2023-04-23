@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { fetchCredits } from "service/api";
 
+
 export const Cast = () => {
     const { movieId } = useParams();
-  
     const [castInfo, setCastInfo] = useState([]);
     useEffect(() => {
       fetchCredits(movieId).then(({ data }) => setCastInfo(data.cast));
@@ -22,7 +22,9 @@ export const Cast = () => {
                         ? `https://image.tmdb.org/t/p/w500${profile_path}`
                         : `https://i.gifer.com/origin/3f/3fcf565ccc553afcfd89858c97304705.gif`
                     }
-                    alt={name}
+                          alt={name}
+                          width={120}
+                        height={180}
                   />
                   <p>{name}</p>
                   <p>{character}</p>
@@ -33,7 +35,7 @@ export const Cast = () => {
         ) : (
           <p>
             <br />
-            Sorry, we dont have any casts for this movie.
+            Sorry, there is no info for this movie.
           </p>
         )}
       </>

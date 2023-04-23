@@ -44,8 +44,8 @@ export const MovieDetails = () => {
                 </Link>
                 </li>
                 <li>
-                <Link to="rewievs">
-                    <h2 >Rewiev information:</h2>
+                <Link to="reviews">
+                    <h2 >Review information:</h2>
                 </Link>
                 </li>
           </ul>
