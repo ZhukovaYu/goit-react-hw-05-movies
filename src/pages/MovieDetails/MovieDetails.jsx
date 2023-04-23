@@ -14,12 +14,14 @@ export const MovieDetails = () => {
       }
       return <div>
         <img
-               src={
+            src={
               details.poster_path
                 ? `https://image.tmdb.org/t/p/w500${details.poster_path}`
                 : `https://i.gifer.com/origin/3f/3fcf565ccc553afcfd89858c97304705.gif`
             }
-            alt={details.title ?? details.name}
+              alt={details.title ?? details.name}
+            width={240}
+            height={360}
           />
           <div>
             <h2>{details.original_title}</h2>

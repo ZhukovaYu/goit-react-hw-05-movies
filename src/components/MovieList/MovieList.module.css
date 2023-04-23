@@ -1,0 +1,12 @@
+.MovieList {
+text-decoration: none;
+display: flex;
+gap: 16px;
+}
+
+.MovieListItem {
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+

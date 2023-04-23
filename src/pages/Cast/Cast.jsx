@@ -24,7 +24,7 @@ export const Cast = () => {
                     }
                           alt={name}
                           width={120}
-                        height={180}
+                          height={180}
                   />
                   <p>{name}</p>
                   <p>{character}</p>
